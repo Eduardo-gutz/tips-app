@@ -7,38 +7,57 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="/estilos.css">
+  
 </head>
 <body>
 
-  Bill
+  <heder class="header">
+    <h1 class="header_1"> SPLI <br> TTER</h1>
+  </heder>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+  <section class="calculator-container">
+    <div class="inputs-sec">
+      <label for="bill" class="inputs-sec_bill-label">Bill</label>
+      <input id="bill"  class="inputs-sec_bill-input" type="number" value="0"/>
 
-  Number of People
+      <fieldset class="btn">
+        <legend class="btn_legend">Select Tip %</legend>
+        <button class="btn_button btn_button--selected">5%</button>
+        <button class="btn_button">10%</button>
+        <button class="btn_button">15%</button>
+        <button class="btn_button">25%</button>
+        <button class="btn_button">50%</button>
+        <input class="btn_custom" type="number" placeholder="Custom"/>
+      </fieldset>
 
-  Tip Amount
-  / person
+      <label for="People"class="inputs-sec_people-label">Number of people <span class="alert"> </span>  </label>
+      <input id="People" class="inputs-sec_people-input" type="number" value="5"/>
+    </div>
+                                                                                   
+    <div class="result-sec">
+      <div class="result">
 
-  Total
-  / person
+        <div>
+          <p class="result_tip-amount">Tip Amount</p>
+          <p class="result_tip-person">/ person</p>
+        </div>
 
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <p class="result_tip-value">0</p>
+
+        <div>
+          <p class="result_total-amount">Total</p>
+          <p class="result_total-person">/ person</p>
+        </div>
+
+        <p class="result_total-value">0</p>
+
+      </div>
+
+      <button class="result-sec_reset">Reset</button>
+
+    </div>
+  </section>
+
 </body>
 </html>
